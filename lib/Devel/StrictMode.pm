@@ -119,7 +119,7 @@ pragmata.
    use Devel::StrictMode;
 
    use strict;
-   use warnings STRICT ? qw(all) : qw(FATAL all);
+   use warnings STRICT ? qw(FATAL all) : qw(all);
    
    no if STRICT, "bareword::filehandles";
    no if STRICT, "autovivification";
