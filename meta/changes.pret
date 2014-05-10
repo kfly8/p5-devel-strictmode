@@ -4,3 +4,9 @@
 	issued  2014-05-10;
 	label   "Initial release".
 
+`Devel-StrictMode 0.002 cpan:TOBYINK`
+	issued  2014-05-10;
+	changeset [
+		item "Minor fix in pragmata example."^^Documentation;
+	].
+
