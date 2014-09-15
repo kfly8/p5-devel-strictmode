@@ -10,3 +10,8 @@
 		item "Minor fix in pragmata example."^^Documentation;
 	].
 
+`Devel-StrictMode 0.003 cpan:TOBYINK`
+	issued  2014-09-15;
+	changeset [
+		item "Fix repo link."^^Packaging;
+	].
