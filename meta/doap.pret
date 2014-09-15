@@ -8,7 +8,7 @@
 	:homepage             <https://metacpan.org/release/Devel-StrictMode>;
 	:download-page        <https://metacpan.org/release/Devel-StrictMode>;
 	:bug-database         <http://rt.cpan.org/Dist/Display.html?Queue=Devel-StrictMode>;
-#	:repository           [ a :GitRepository; :browse <https://github.com/tobyink/p5-devel-strictmode> ];
+	:repository           [ a :GitRepository; :browse <https://github.com/tobyink/p5-devel-strictmode> ];
 	:created              2014-05-10;
 	:license              <http://dev.perl.org/licenses/>;
 	:maintainer           cpan:TOBYINK;
