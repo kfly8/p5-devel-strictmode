@@ -20,10 +20,8 @@ the same terms as the Perl 5 programming language system itself.
 =cut
 
 BEGIN {
-	$ENV{EXTENDED_TESTING} =
-	$ENV{RELEASE_TESTING} =
-	$ENV{AUTHOR_TESTING} =
-	$ENV{PERL_STRICT} = 0;
+	require Devel::StrictMode;
+	$ENV{$_} = 0 for @Devel::StrictMode::KEYS;
 };
 
 use strict;

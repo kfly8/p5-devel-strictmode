@@ -13,15 +13,16 @@ our @EXPORT    = qw( STRICT );
 our @EXPORT_OK = qw( LAX );
 
 BEGIN {
+	our @KEYS = qw(
+		EXTENDED_TESTING
+		AUTHOR_TESTING
+		RELEASE_TESTING
+		PERL_STRICT
+	);
+
 	my $strict = 0;
-	$ENV{$_} && $strict++
-		for qw(
-			EXTENDED_TESTING
-			AUTHOR_TESTING
-			RELEASE_TESTING
-			PERL_STRICT
-		);
-	
+	$ENV{$_} && $strict++ for @KEYS;
+
 	eval "
 		sub STRICT () { !! $strict }
 		sub LAX    () {  ! $strict }
